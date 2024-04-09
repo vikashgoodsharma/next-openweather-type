@@ -21,7 +21,7 @@ export function formatDateTime(dateTimeString: string) {
 }
 
 
-export function convertUnixTimestamp(unixTimestamp: string) {
+export function convertUnixTimestamp(unixTimestamp: any) {
     // Create a new Date object using the Unix timestamp (in seconds)
     const date = new Date(unixTimestamp * 1000);
 

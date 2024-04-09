@@ -2,10 +2,9 @@
 import { useState } from "react";
 import { convertUnixTimestamp, getDayOfWeek } from "../utils/utils";
 
-export const RightSection = ({weatherData, weatherDayData}) => {
+export const RightSection = ({weatherData, weatherDayData}: { weatherData: any, weatherDayData: any }) => {
     const [isWeekSelected, setIsWeekSelected]= useState(true);
     const [isCelciusSelected, setIsCelciusSelected]= useState(true);
-console.log("weather", weatherData)
  
   return (
     <div className="bg-gray-100 w-[75%] rounded-r-3xl py-8 px-[5%]">
@@ -27,7 +26,7 @@ console.log("weather", weatherData)
         </div>
 
         <div className="flex justify-evenly mt-16">
-            { weatherData?.list?.map((item, index)=>{
+            { weatherData?.list?.map((item:any, index:number)=>{
                 return(
                     <div className="bg-white w-[14%] rounded-3xl flex-col justify-between p-2" key={index}>
                       <div className="text-center font-bold">

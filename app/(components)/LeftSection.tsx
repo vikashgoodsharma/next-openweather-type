@@ -2,7 +2,7 @@
 
 import { formatDateTime } from "../utils/utils";
 
-export const LeftSection = ({weatherData, weatherDayData, photoData}) => {
+export const LeftSection = ({weatherData, weatherDayData, photoData}: { weatherData: any, weatherDayData: any, photoData: any }) => {
     
   return (
   <>
