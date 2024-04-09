@@ -42,7 +42,7 @@ export const RightSection = ({weatherData, weatherDayData}: { weatherData: any, 
         </div>
 
         <div className="mt-8">
-            <p className="font-bold text-[20px]">Today's Highlights</p>
+            <p className="font-bold text-[20px]">Today`s Highlights</p>
 
 
             <div className="flex flex-wrap justify-between mt-8 w-full">
